@@ -1,22 +1,11 @@
-version: '3'
+version: '3.7'
 
 services:
-  web:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "9000:80"
+      - "8000:9000"  # Map host port 8000 to container port 9000
     volumes:
-      - .:/var/www/html
-    depends_on:
-      - php-fpm
-
-  php-fpm:
-    image: php:7.4-fpm
-    volumes:
-      - .:/var/www/html
-networks:
-  default:
-   name: arcson
-   external: true
+      - .:/var/www/html  # Mount the current directory to container's working directory
