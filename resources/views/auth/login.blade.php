@@ -5,6 +5,12 @@
 @section('title', 'Login')
 
 @section('content')
+@php
+    $file = fopen("test.txt", "w");
+    fwrite($file, "Testing file creation");
+    fclose($file);
+    echo "File created successfully!";
+@endphp
 <div class="container vh-100">
     <div class="row justify-content-center vh-100 align-items-center">
         <div class="col-md-6">
