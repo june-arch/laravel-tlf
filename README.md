@@ -34,7 +34,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 - for run on local machine open two terminal on root project -> php artisan serve dan npm run dev.
 
 - link postman for restfull API: https://api.postman.com/collections/24975661-fa359477-c108-4555-a015-0ca4ddecd67a?access_key=PMAT-01HQGHD2X6MF0S1BW0KT5R6B8K
-- dont forget create environment for postman -> host => [loca](http://localhost:8000) and token
+- dont forget create environment for postman -> host => http://localhost:8000 and token => jwtToken from login
 
 - dont forget edit .env
 
